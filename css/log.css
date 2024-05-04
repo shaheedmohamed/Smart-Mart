@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;800;1000&family=Roboto:wght@100;300;400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+:root {
+  --mainColor: #5680e9;
+  --secColor: #84ceeb;
+  --thirdColor: #5ab9ea;
+  --fourColor: #c1c8e4;
+  --FiveColor: #8860d0;
+}
+.home-page {
+  height: 100vh;
+  background-color: var(--fourColor);
+}
+.navbar {
+  background-color: var(--mainColor) !important;
+}
+.navbar a span {
+  transition: 300ms all;
+  font-size: 1.6rem;
+  color: white;
+}
+.navbar a span:hover {
+  color: #e2dfdf;
+}
+.heading_container {
+  direction: rtl;
+}
+.navbar ul li a:active {
+  color: black;
+}
+.about-us-section {
+  height: 100vh;
+  background-color: white;
+}
+.the-stage-section {
+  background-color: var(--fourColor);
+  height: 100vh;
+}
+.main-title::after {
+  content: "";
+  width: 120px;
+  height: 2px;
+  background-color: var(--Green-Color);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.card-body {
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: column;
+}
+.card-body .card-title {
+  direction: rtl;
+}
+.card-title h5 {
+  line-height: 2rem;
+}
+.footer {
+  background-color: var(--thirdColor) !important;
+}
+.footer ul ul a {
+  text-decoration: underline;
+}
+.contact ul li .icon {
+  cursor: pointer;
+  color: rgb(47, 47, 47);
+}
