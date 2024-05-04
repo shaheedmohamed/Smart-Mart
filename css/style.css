@@ -103,6 +103,18 @@ h6 {
   visibility: visible;
   opacity: 1;
 }
+.ttt  img{
+  cursor: pointer;
+  transition: 1s;
+  border-radius: 50%;
+}
+.ttt  img:hover{
+  opacity: 50%;
+}
+.row img {
+  cursor: pointer;
+}
+
 
 /*--------------------------------------------------------------
 # Header
