@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="all.min.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign In page</title>
+    <link rel="icon" href="img/icon.icon">
+    <link rel="stylesheet" href="css/log.css" />
+    <link rel="stylesheet" href="mahmoudMoumenStyle.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css.map" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+      }
+
+      .big-container {
+        font-family: sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 56px);
+        background-color: #eee;
+      }
+      .container-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+        position: relative;
+      }
+      form {
+        box-shadow: 23px 18px 36px -21px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 1px 6px 36px 1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 23px 18px 36px -21px rgba(0, 0, 0, 0.75);
+        padding: 20px 10px;
+        background-color: white;
+        width: 427px;
+        border-radius: 11px;
+      }
+      a {
+        text-decoration: none;
+      }
+      .loginWord,
+      .linkForgot,
+      .specialP,
+      hr {
+        align-self: center;
+      }
+      .loginWord {
+        margin-bottom: 29px;
+      }
+      .linkForgot,
+      .specialP {
+        font-size: 13px;
+      }
+      input {
+        height: 40px;
+        border-radius: 8px;
+        padding-left: 10px;
+        border: 1px solid #00000073;
+      }
+      .loginBtn,
+      #faceebookBtn {
+        background-color: rgb(1, 113, 211);
+        color: white;
+      }
+      #faceebookBtn {
+        padding-left: 20px;
+        padding-right: 20px;
+        background-color: #4167b2 !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #faceebookBtn:hover {
+        background-color: #2e497f !important;
+      }
+      .or {
+        font-size: 1rem;
+        border-bottom: 1px solid black;
+        line-height: 0.1rem;
+        color: black;
+        background-color: white;
+        width: 100%;
+        text-align: center;
+      }
+      .or span {
+        background-color: white;
+      }
+      button {
+        height: 40px;
+        border-radius: 8px;
+        border: none;
+      }
+      #googleBtn {
+        padding-left: 20px;
+        padding-right: 20px;
+        transition: 300ms all;
+        border: 1px solid #00000073 !important;
+        color: black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #googleBtn:hover {
+        background-color: #cbc0c0c8 !important;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class="big-container">
+      <form action="">
+        <div class="container-1">
+          <h2 class="loginWord"> انشاء حساب</h2>
+          <input class="form-control" type="email" placeholder="الايميل" />
+          <input
+            class="form-control"
+            type="password"
+            placeholder=" انشاء كلمه مرور"
+          />
+          <input
+            class="form-control"
+            type="password"
+            placeholder=" تاكيد كلمه المرور"
+          />
+          <a href="index.html" class="loginBtn btn btn-primary"> انشاء حساب </a>
+          <p class="specialP fs-6">
+            هل لديك حساب بالفعل  !؟  <a href="log-In.html">تسحيل الدخول</a>
+          </p>
+          <p class="or"><span>or</span></p>
+          <button class="btn" id="faceebookBtn">
+            <i class="fa-brands fa-facebook fa-fw"></i>تسجيل الدخول باستخدام الفيسبوك
+          </button>
+          <button id="googleBtn">
+            <i class="fa-brands fa-google fa-fw"></i> تسجيل الدخول باستخدام بجوجل
+          </button>
+            <a href="index.html" class="btn btn-primary w-100 mt-2">العوده للصفحه الرئيسيه</a>
+        </div>
+      </form>
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="MAhmoudMoumenScript.js"></script>
+  </body>
+</html>
